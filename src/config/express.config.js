@@ -1,6 +1,8 @@
 const express = require("express");
-const router = require("../router");
 const app = express();
+require('dotenv').config();
+require("./dbCon.config")
+const router = require("../router");
 
 // body parser
 app.use(express.json());
